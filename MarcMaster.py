@@ -36,7 +36,7 @@ def timeTuple():
     ToD = datetime.datetime.time(datetime.datetime.now())
     return datetime.time(ToD.hour,ToD.minute,ToD.second)
 
-now = timeTuple()
+
 
 
 
@@ -188,16 +188,20 @@ def AM_or_PMcommute():
 
 def trainTable():
     
-    depart_odenten_to_DC = [datetime.time(4,49,00),datetime.time(5,19,00),datetime.time(5,49,00),datetime.time(6,42,00),datetime.time(6,57,00),
-                            datetime.time(7,17,00),datetime.time(7,31,00),datetime.time(7,46,00),datetime.time(8,9,00),datetime.time(8,54,00),
-                            datetime.time(9,26,00),datetime.time(9,53,00),datetime.time(10,52,00),datetime.time(12,02,00),datetime.time(13,02,00),
-                            datetime.time(14,02,00),datetime.time(15,02,00),datetime.time(16,12,00),datetime.time(16,43,00),datetime.time(17,13,00),
-                            datetime.time(17,51,00),datetime.time(18,49,00),datetime.time(20,01,00),datetime.time(21,56,00)]
+    southBound_table = [datetime.time(4,44,00),datetime.time(5,14,00),datetime.time(5,49,00),datetime.time(6,42,00),datetime.time(6,57,00),
+                                datetime.time(7,17,00),datetime.time(7,31,00),datetime.time(7,46,00),datetime.time(8,9,00),datetime.time(8,54,00),
+                                datetime.time(9,26,00),datetime.time(9,53,00),datetime.time(10,52,00),datetime.time(12,02,00),datetime.time(13,02,00),
+                                datetime.time(14,02,00),datetime.time(15,02,00),datetime.time(16,12,00),datetime.time(16,43,00),datetime.time(17,13,00),
+                                datetime.time(17,51,00),datetime.time(18,49,00),datetime.time(20,01,00),datetime.time(21,56,00)]
     
-    arrive_DC_from_Odenten = []
+    
 
 
-    northBound_table = []
+
+
+    northBound_table = [datetime.time(12,20,00),datetime.time(13,20,00),datetime.time(14,20,00),datetime.time(15,23,00),datetime.time(16,10,00),datetime.time(16,22,0),
+                        datetime.time(16,45,00),datetime.time(17,10,00),datetime.time(17,24,0),datetime.time(17,50,00),datetime.time(18,23,00),datetime.time(18,45,00),
+                        datetime.time(19,40,00),datetime.time(21,0,0),datetime.time(22,40,00)]
 
 def AM_trainDelays():
 
@@ -211,7 +215,9 @@ def AM_trainDelays():
     EOStr = int(makeString.find("Odenton"))
 
     OdentenStation = makeString[EOStr:]
+    
     status = int(makeString.find("Delayed"))
+    veryLate = int(makeString.find("VeryLate"))
 
 
     delay = int(makeString.find("Min"))
@@ -269,6 +275,7 @@ def big_compute():
     
     
 def main():
+    now = timeTuple()
     big_compute() 
     Leave_home()
     AM_trainDelays()
