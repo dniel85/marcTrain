@@ -14,15 +14,15 @@ DepartOdenton_ArrivePenn = [[401,datetime.time(4,44),datetime.time(5,19)],[403,d
                             [445,datetime.time(17,48),datetime.time(18,20)],[449,datetime.time(18,45),datetime.time(19,15)],[451,datetime.time(19,56),datetime.time(20,27)],
                             [453,datetime.time(21,56),datetime.time(22,30)]]
 
-DepartPenn_ArriveOdenton = [[400,datetime.time(5,50),datetime.time(06,19)],[502,datetime.time(6,10),datetime.time(6,37)],[404,datetime.time(6,35),datetime.time(7,00)],
+DepartPenn_ArriveOdenton = [[400,datetime.time(5,50),datetime.time(6,19)],[502,datetime.time(6,10),datetime.time(6,37)],[404,datetime.time(6,35),datetime.time(7,00)],
                             [406,datetime.time(7,10),datetime.time( 7,38)],[610,datetime.time(7,50),datetime.time(8,22)],[612,datetime.time(8,20),datetime.time(8,47)],
-                            [412,datetime.time(9,05),datetime.time(9,33)],[414,datetime.time(9,30),datetime.time(9,57)],[416,datetime.time(10,30),datetime.time(10,57)],
+                            [412,datetime.time(9,5),datetime.time(9,33)],[414,datetime.time(9,30),datetime.time(9,57)],[416,datetime.time(10,30),datetime.time(10,57)],
                             [418,datetime.time(11,20),datetime.time(11,47)],[520,datetime.time(12,20),datetime.time(12,47)],[422,datetime.time(13,20),datetime.time(13,47)],
                             [424,datetime.time(14,20),datetime.time(14,47)],[426,datetime.time(15,23),datetime.time(15,51)],[428,datetime.time(16,10),datetime.time(16,39)],
                             [532,datetime.time(16,22),datetime.time(16,53)],[634,datetime.time(16,45),datetime.time(17,15)],[536,datetime.time(17,10),datetime.time(17,35)],
                             [440,datetime.time(17,24),datetime.time(17,56)],[642,datetime.time(17,50),datetime.time(18,19)],[544,datetime.time(18,23),datetime.time(18,51)],
                             [446,datetime.time(18,45),datetime.time(19,14)],[448,datetime.time(19,40),datetime.time(20,8)],[548,datetime.time(21,00),datetime.time(21,28)],
-                            [452,datetime.time(22,40),datetime.time(23,07)]]
+                            [452,datetime.time(22,40),datetime.time(23,7)]]
 
 weather = Weather()
 '''Calling weahter API'''
